@@ -20,6 +20,8 @@ var arithmetic = require('../js/arithmetic.js');
 var objects = require('../js/objects.js');
 var objectInfo = require('../js/object-info.js');
 var objectSort = require('../js/object-sort.js');
+var secondLargest = require('../js/second-largest.js');
+var findTheDay = require('../js/find-the-day.js');
 
 describe('challenges', function() {
     var hook;
@@ -116,5 +118,31 @@ describe('challenges', function() {
         assert.equal(hook.captured(), expectedOutput);
     });
 
+    it('second largest', function() {
+        secondLargest.processData([2, 3, 6, 6, 5]);
+        assert.equal(hook.captured(), '5\n');
+        hook.clear();
+        secondLargest.processData([5, 5, 5, 5, 5]);
+        assert.equal(hook.captured(), '5\n');
+        hook.clear();
+        secondLargest.processData([-1, -1, -3, 5]);
+        assert.equal(hook.captured(), '-1\n');
+        hook.clear();
+    });
+
+    it('second largest', function() {
+        findTheDay.processData('10/11/2009');
+        assert.equal(hook.captured(), 'Sunday\n');
+        hook.clear();
+        findTheDay.processData('11/10/2010');
+        assert.equal(hook.captured(), 'Wednesday\n');
+        hook.clear();
+        findTheDay.processData('02/01/2016');
+        assert.equal(hook.captured(), 'Monday\n');
+        hook.clear();
+        findTheDay.processData('-1');
+        assert.equal(hook.captured(), '');
+        hook.clear();
+    });
 
 });
