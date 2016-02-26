@@ -75,7 +75,7 @@ describe('challenges', function() {
     it('arithmetic', function() {
         var results = arithmetic.processData(1, 2);
         assert.equal(results.add, 3);
-        assert.equal(results.sub, 1);
+        assert.equal(results.sub, -1);
         assert.equal(results.mul, 2);
         assert.equal(results.div, 0.5);
         assert.equal(results.inc, 2);

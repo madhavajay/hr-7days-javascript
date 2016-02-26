@@ -3,7 +3,7 @@
 
 function processData(a, b) {
 	var add = a + b;
-	var sub = b - a;
+	var sub = a - b;
 	var mul = a * b;
 	var div = a / b;
 	var inc = ++a;
