@@ -13,6 +13,9 @@ function captureStream(stream) {
         unhook: function unhook() {
             stream.write = oldWrite;
         },
+        clear: function clear() {
+            buf = '';
+        },
         captured: function() {
             return buf;
         }
