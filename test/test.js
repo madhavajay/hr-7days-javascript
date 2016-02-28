@@ -32,6 +32,7 @@ var toys = require('../js/toys.js');
 var utopianTree = require('../js/utopian-tree.js');
 var cellGrid = require('../js/cell-grid.js');
 var loveLetter = require('../js/love-letter.js');
+var wave = require('../js/wave.js');
 
 
 describe('challenges', function() {
@@ -232,7 +233,12 @@ describe('challenges', function() {
         hook.clear();
         loveLetter.processData(fixtures.loveLetter4);
         assert.equal(hook.captured(), '201\n1\n4\n20\n153\n453\n192\n108\n216\n313\n');
+        hook.clear();     
+    });
+
+    it('wave', function() {
+        wave.processData();
+        assert.equal(hook.captured(), fixtures.waves);
         hook.clear();
-        
     });
 });

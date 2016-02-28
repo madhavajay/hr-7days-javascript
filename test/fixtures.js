@@ -85,7 +85,22 @@ var fixtures = {
                  'qoxpbjstmxlidzowavnqnlwnbpvustpiimzlxsfjrstwtksufhm\n' +
                  'ujgvabptwgbesdqrvxc\n' +
                  'rvilfchnjtgfeoahrrcnxdspgkidjkrahbnpdwcosktyytfpkhch\n' +
-                 'wyvigbrssucuhrxetoydhwdbcsnlwxavvwdexxyrralarlgmzergbujfoxslu'
+                 'wyvigbrssucuhrxetoydhwdbcsnlwxavvwdexxyrralarlgmzergbujfoxslu',
+    waves: '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n' +
+           '╱╲╱╲╱╲╱╲╱╲╱╲╱╲\n'
+
 
 };
 
