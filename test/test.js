@@ -33,6 +33,7 @@ var utopianTree = require('../js/utopian-tree.js');
 var cellGrid = require('../js/cell-grid.js');
 var loveLetter = require('../js/love-letter.js');
 var wave = require('../js/wave.js');
+var tree = require('../js/tree.js');
 
 
 describe('challenges', function() {
@@ -239,6 +240,12 @@ describe('challenges', function() {
     it('wave', function() {
         wave.processData();
         assert.equal(hook.captured(), fixtures.waves);
+        hook.clear();
+    });
+
+    it('tree', function() {
+        tree.processData();
+        assert.equal(hook.captured(), fixtures.tree);
         hook.clear();
     });
 });
