@@ -22,6 +22,16 @@ var objectInfo = require('../js/object-info.js');
 var objectSort = require('../js/object-sort.js');
 var secondLargest = require('../js/second-largest.js');
 var findTheDay = require('../js/find-the-day.js');
+var dataTypes = require('../js/data-types.js');
+var arrows = require('../js/arrows.js');
+var templateString = require('../js/template-string.js');
+var letVar = require('../js/let.js');
+var constVar = require('../js/const.js');
+var forOf = require('../js/for-of.js');
+var toys = require('../js/toys.js');
+var utopianTree = require('../js/utopian-tree.js');
+var cellGrid = require('../js/cell-grid.js');
+
 
 describe('challenges', function() {
     var hook;
@@ -130,7 +140,7 @@ describe('challenges', function() {
         hook.clear();
     });
 
-    it('second largest', function() {
+    it('find the day', function() {
         findTheDay.processData('10/11/2009');
         assert.equal(hook.captured(), 'Sunday\n');
         hook.clear();
@@ -145,4 +155,67 @@ describe('challenges', function() {
         hook.clear();
     });
 
+    it('data types', function() {
+        var results = dataTypes.processData();
+        assert.equal(results.my_num, 1);
+        assert.equal(results.my_bool, true);
+        assert.equal(results.my_str, 'string');
+    });
+
+    it('arrows', function() {
+        var results = arrows.my_function([1, 2, 3, 5, 7, 7, -1, -4, 0]);
+        var expectedOutput = [0, 3, 2, 4, 6, 6, -2, -3, 1];
+        assert.equal(JSON.stringify(results), JSON.stringify(expectedOutput));
+    });
+
+    it('template string', function() {
+        var results = templateString.my_template_string;
+        assert.equal(results, fixtures.myTemplateString);
+    });
+
+    it('let', function() {
+        letVar.processData(6, 2);
+        assert.equal(hook.captured(), fixtures.letMessage);
+    });
+
+    it('let', function() {
+        var results = constVar.processData();
+        assert.equal(results.PI, 3.141592653589793);
+        assert.equal(results.EULER, 2.718281828459045);
+        assert.equal(results.SQRT2, 1.4142135623730951);
+    });
+
+    it('for of', function() {
+        forOf.processData(['1', '12', '1221', '393', '-12321-']);
+        assert.equal(hook.captured(), '1\n1221\n393\n-12321-\n');
+    });
+
+    it('toys', function() {
+        toys.processData(fixtures.toys1);
+        assert.equal(hook.captured(), '4\n');
+        hook.clear();
+        toys.processData(fixtures.toys2);
+        assert.equal(hook.captured(), '1\n');
+        hook.clear();
+        toys.processData(fixtures.toys3);
+        assert.equal(hook.captured(), '3\n');
+    });
+
+    it('utopian tree', function() {
+        utopianTree.processData('3\n0\n1\n4');
+        assert.equal(hook.captured(), '1\n2\n7\n');
+        hook.clear();
+    });
+
+    it('cell grid', function() {
+        cellGrid.processData(fixtures.grid1);
+        assert.equal(hook.captured(), '5\n');
+        hook.clear();
+        cellGrid.processData(fixtures.grid2);
+        assert.equal(hook.captured(), '9\n');
+        hook.clear();
+        cellGrid.processData(fixtures.grid3);
+        assert.equal(hook.captured(), '3\n');
+        hook.clear();
+    });
 });

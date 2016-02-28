@@ -1,5 +1,6 @@
 {
     "mocha": true,
+    "esnext": true,
     "globals"   : {
         /* MOCHA */
         "describe"   : false,
