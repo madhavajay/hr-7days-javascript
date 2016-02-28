@@ -31,6 +31,7 @@ var forOf = require('../js/for-of.js');
 var toys = require('../js/toys.js');
 var utopianTree = require('../js/utopian-tree.js');
 var cellGrid = require('../js/cell-grid.js');
+var loveLetter = require('../js/love-letter.js');
 
 
 describe('challenges', function() {
@@ -217,5 +218,21 @@ describe('challenges', function() {
         cellGrid.processData(fixtures.grid3);
         assert.equal(hook.captured(), '3\n');
         hook.clear();
+    });
+
+    it('love letter', function() {
+        loveLetter.processData(fixtures.loveLetter1);
+        assert.equal(hook.captured(), '2\n');
+        hook.clear();
+        loveLetter.processData(fixtures.loveLetter2);
+        assert.equal(hook.captured(), '2\n0\n4\n2\n');
+        hook.clear();
+        loveLetter.processData(fixtures.loveLetter3);
+        assert.equal(hook.captured(), '11\n11\n58\n27\n4\n');
+        hook.clear();
+        loveLetter.processData(fixtures.loveLetter4);
+        assert.equal(hook.captured(), '201\n1\n4\n20\n153\n453\n192\n108\n216\n313\n');
+        hook.clear();
+        
     });
 });

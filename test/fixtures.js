@@ -61,7 +61,32 @@ var fixtures = {
     grid3: '3\n5\n' +
            '0 0 0 0 0\n' + 
            '0 1 1 1 0\n' + 
-           '0 0 0 0 0'
+           '0 0 0 0 0',
+    loveLetter1: '1\n' + 
+                 'abc',
+    loveLetter2: '4\n' + 
+                 'abc\n' + 
+                 'abcba\n' + 
+                 'abcd\n' + 
+                 'cba\n',
+    loveLetter3: '5\n' +
+                 'pue\n' +
+                 'heubsbn\n' +
+                 'feazhaxpux\n' +
+                 'hmhcy\n' +
+                 'tmp',
+    loveLetter4: '10\n' +
+                 'vdtzjgsmitfnnrypmfkarhbmgwsghypfdkeoqyaashohyownv\n' +
+                 'nm\n' +
+                 'qywo\n' +
+                 'ey\n' +
+                 'vdyfhmvgpvawlhxzfkuozggpgcgb\n' +
+                 'evdhtiqgfyvcytohqppcmdbultbnzevdbakvkcdpbatbtjlmzaolfqfqjifkoanqcznmbqbeswglgrzfroswgxoritbw\n' +
+                 'qoxpbjstmxlidzowavnqnlwnbpvustpiimzlxsfjrstwtksufhm\n' +
+                 'ujgvabptwgbesdqrvxc\n' +
+                 'rvilfchnjtgfeoahrrcnxdspgkidjkrahbnpdwcosktyytfpkhch\n' +
+                 'wyvigbrssucuhrxetoydhwdbcsnlwxavvwdexxyrralarlgmzergbujfoxslu'
+
 };
 
 exports.fixtures = fixtures;
